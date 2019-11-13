@@ -1,0 +1,21 @@
+{
+  "name": "eslint-config-zyehex",
+  "version": "0.1.0",
+  "description": "Shareable ESLint config for Zyehex.",
+  "main": "index.js",
+  "author": "Tregan Emmett <tregan@tregan.me>",
+  "repository": "gitlab:zyehex/eslint-config-zyehex",
+  "license": "MIT",
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.7.0",
+    "@typescript-eslint/parser": "^2.7.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-prettier": "^3.1.1",
+    "prettier": "^1.19.1"
+  },
+  "peerDependencies": {
+    "eslint": ">= 6"
+  }
+}
