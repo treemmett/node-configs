@@ -10,6 +10,7 @@ module.exports = {
     '@typescript-eslint/explicit-member-accessibility': 2,
     '@typescript-eslint/member-ordering': 2,
     '@typescript-eslint/no-unused-vars': 2,
+    'consistent-return': 0,
     'import/no-cycle': 0,
     'import/order': 0,
     'no-alert': 2,

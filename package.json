@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-zyehex",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Shareable ESLint config for Zyehex.",
   "main": "index.js",
   "author": "Tregan Emmett <tregan@tregan.me>",
