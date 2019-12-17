@@ -18,6 +18,15 @@ module.exports = {
     'prettier/prettier': [2, { singleQuote: true }],
     'sort-imports': 2
   },
+  overrides: [
+    {
+      files: ['*.ts', '*.tsx'],
+      rules: {
+        'no-dupe-class-members': 0,
+        'lines-between-class-members': 0
+      }
+    }
+  ],
   parserOptions: {
     ecmaVersion: 2018,
     sourceType: 'module'
