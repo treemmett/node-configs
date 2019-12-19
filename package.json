@@ -1,8 +1,11 @@
 {
   "name": "eslint-config-zyehex",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Shareable ESLint config for Zyehex.",
   "main": "index.js",
+  "files": [
+    "react.js"
+  ],
   "author": "Tregan Emmett <tregan@tregan.me>",
   "repository": "gitlab:zyehex/eslint-config-zyehex",
   "license": "MIT",
@@ -13,9 +16,15 @@
     "eslint-config-prettier": "^6.5.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-react-hooks": "^2.3.0",
     "prettier": "^1.19.1"
   },
   "peerDependencies": {
     "eslint": ">= 6"
+  },
+  "devDependencies": {
+    "eslint": "^6.7.2",
+    "typescript": "^3.7.3"
   }
 }
