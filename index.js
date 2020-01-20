@@ -11,6 +11,16 @@ module.exports = {
     '@typescript-eslint/member-ordering': 2,
     '@typescript-eslint/no-unused-vars': 2,
     'consistent-return': 0,
+    'import/extensions': [
+      2,
+      'ignorePackages',
+      {
+        ts: 'never',
+        tsx: 'never',
+        js: 'never',
+        jsx: 'never'
+      }
+    ],
     'import/no-cycle': 0,
     'import/order': 0,
     'no-alert': 2,
@@ -32,13 +42,13 @@ module.exports = {
     sourceType: 'module'
   },
   settings: {
-    'import/extensions': ['.js', '.jsx', '.ts', '.tsx'],
+    'import/extensions': ['.ts', '.tsx', '.js', '.jsx'],
     'import/parsers': {
       '@typescript-eslint/parser': ['.ts', '.tsx']
     },
     'import/resolver': {
       node: {
-        extensions: ['.js', '.jsx', '.ts', '.tsx']
+        extensions: ['.ts', '.tsx', '.js', '.jsx']
       }
     }
   }
