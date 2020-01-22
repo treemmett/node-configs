@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-zyehex",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Shareable ESLint config for Zyehex.",
   "main": "index.js",
   "files": [
