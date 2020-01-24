@@ -7,6 +7,10 @@ module.exports = {
     'plugin:prettier/recommended'
   ],
   rules: {
+    '@typescript-eslint/explicit-function-return-type': [
+      2,
+      { allowExpressions: true }
+    ],
     '@typescript-eslint/explicit-member-accessibility': 2,
     '@typescript-eslint/member-ordering': 2,
     '@typescript-eslint/no-unused-vars': 2,
