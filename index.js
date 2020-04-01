@@ -1,59 +1,16 @@
 module.exports = {
-  parser: '@typescript-eslint/parser',
   extends: [
-    'airbnb-base',
-    'plugin:@typescript-eslint/recommended',
-    'prettier/@typescript-eslint',
-    'plugin:prettier/recommended'
+    './rules/best-practice',
+    './rules/errors',
+    './rules/env',
+    './rules/es6',
+    './rules/imports',
+    './rules/strict',
+    './rules/style',
+    './rules/variables'
   ],
-  rules: {
-    '@typescript-eslint/explicit-function-return-type': [
-      2,
-      { allowExpressions: true }
-    ],
-    '@typescript-eslint/explicit-member-accessibility': 2,
-    '@typescript-eslint/member-ordering': 2,
-    '@typescript-eslint/no-unused-vars': 2,
-    'consistent-return': 0,
-    'import/extensions': [
-      2,
-      'ignorePackages',
-      {
-        ts: 'never',
-        tsx: 'never',
-        js: 'never',
-        jsx: 'never'
-      }
-    ],
-    'import/no-cycle': 0,
-    'import/order': 0,
-    'no-alert': 2,
-    'no-console': 2,
-    'prettier/prettier': [2, { singleQuote: true }],
-    'sort-imports': 2
-  },
   overrides: [
-    {
-      files: ['*.ts', '*.tsx'],
-      rules: {
-        'no-dupe-class-members': 0,
-        'lines-between-class-members': 0
-      }
-    }
-  ],
-  parserOptions: {
-    ecmaVersion: 2018,
-    sourceType: 'module'
-  },
-  settings: {
-    'import/extensions': ['.ts', '.tsx', '.js', '.jsx'],
-    'import/parsers': {
-      '@typescript-eslint/parser': ['.ts', '.tsx']
-    },
-    'import/resolver': {
-      node: {
-        extensions: ['.ts', '.tsx', '.js', '.jsx']
-      }
-    }
-  }
+    { files: '**/*.{ts,tsx}', extends: ['./rules/typescript'] },
+    { files: '**/*.{tsx,jsx}', extends: ['./rules/react'] }
+  ]
 };
