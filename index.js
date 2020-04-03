@@ -10,7 +10,13 @@ module.exports = {
     './rules/variables'
   ],
   overrides: [
-    { files: '**/*.{ts,tsx}', extends: ['./rules/typescript'] },
-    { files: '**/*.{tsx,jsx}', extends: ['./rules/react'] }
+    {
+      files: '**/*.{ts,tsx}',
+      extends: ['./rules/typescript']
+    },
+    {
+      files: '**/*.{tsx,jsx}',
+      extends: ['./rules/react']
+    }
   ]
 };
