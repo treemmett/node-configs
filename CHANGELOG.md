@@ -1,3 +1,9 @@
+## [0.3.1](https://gitlab.com/zyehex/eslint-config-zyehex/compare/v0.3.0...v0.3.1) (2020-04-03)
+
+### Bug Fixes
+
+- **rules:** enable trailing comma ([a2dba06](https://gitlab.com/zyehex/eslint-config-zyehex/commit/a2dba0632bb365b96cefe5731e34653b8a72af09))
+
 # [0.3.0](https://gitlab.com/zyehex/eslint-config-zyehex/compare/v0.2.3...v0.3.0) (2020-04-03)
 
 ### Bug Fixes
