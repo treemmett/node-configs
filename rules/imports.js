@@ -7,19 +7,6 @@ module.exports = {
     sourceType: 'module'
   },
   plugins: ['import'],
-  settings: {
-    'import/extensions': ['.ts', '.tsx', '.js', '.jsx'],
-    'import/ignore': [
-      'node_modules',
-      '\\.(coffee|scss|css|less|hbs|svg|json)$'
-    ],
-    'import/resolver': {
-      node: {
-        extensions: ['.ts', '.tsx', '.js', '.jsx', '.json']
-      }
-    }
-  },
-
   rules: {
     'import/default': 'error',
     'import/dynamic-import-chunkname': 'off',
@@ -29,10 +16,10 @@ module.exports = {
       'error',
       'ignorePackages',
       {
-        ts: 'never',
-        tsx: 'never',
         js: 'never',
-        jsx: 'never'
+        jsx: 'never',
+        ts: 'never',
+        tsx: 'never'
       }
     ],
     'import/first': 'error',
@@ -83,20 +70,32 @@ module.exports = {
     'import/no-mutable-exports': 'error',
     'import/no-named-as-default': 'error',
     'import/no-named-as-default-member': 'error',
-    'import/no-named-export': 'off',
     'import/no-named-default': 'error',
+    'import/no-named-export': 'off',
     'import/no-namespace': 'off',
     'import/no-nodejs-modules': 'off',
     'import/no-relative-parent-imports': 'off',
     'import/no-restricted-paths': 'off',
     'import/no-self-import': 'error',
     'import/no-unassigned-import': 'off',
-    'import/no-unresolved': ['error', { commonjs: true, caseSensitive: true }],
-    'import/order': 'off',
+    'import/no-unresolved': ['error', { caseSensitive: true, commonjs: true }],
     'import/no-unused-modules': 'off',
     'import/no-useless-path-segments': ['error', { commonjs: true }],
     'import/no-webpack-loader-syntax': 'error',
+    'import/order': 'off',
     'import/prefer-default-export': 'error',
     'import/unambiguous': 'off'
+  },
+  settings: {
+    'import/extensions': ['.ts', '.tsx', '.js', '.jsx'],
+    'import/ignore': [
+      'node_modules',
+      '\\.(coffee|scss|css|less|hbs|svg|json)$'
+    ],
+    'import/resolver': {
+      node: {
+        extensions: ['.ts', '.tsx', '.js', '.jsx', '.json']
+      }
+    }
   }
 };

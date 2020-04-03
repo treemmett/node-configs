@@ -15,11 +15,11 @@ module.exports = {
     'no-undefined': 'off',
     'no-unused-vars': [
       'error',
-      { vars: 'all', args: 'after-used', ignoreRestSiblings: true }
+      { args: 'after-used', ignoreRestSiblings: true, vars: 'all' }
     ],
     'no-use-before-define': [
       'error',
-      { functions: false, classes: true, variables: true }
+      { classes: true, functions: false, variables: true }
     ]
   }
 };

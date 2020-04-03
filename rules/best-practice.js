@@ -3,8 +3,8 @@ module.exports = {
     'accessor-pairs': 'off',
     'array-callback-return': ['error', { allowImplicit: true }],
     'block-scoped-var': 'error',
-    complexity: ['error', 20],
     'class-methods-use-this': 'error',
+    complexity: ['error', 20],
     'consistent-return': 'off',
     curly: ['error', 'all'],
     'default-case': ['error', { commentPattern: '^no default$' }],
@@ -49,7 +49,6 @@ module.exports = {
     'no-param-reassign': [
       'error',
       {
-        props: true,
         ignorePropertyModificationsFor: [
           'acc', // for reduce accumulators
           'accumulator', // for reduce accumulators
@@ -57,7 +56,8 @@ module.exports = {
           'request', // for Express requests
           'res', // for Express responses
           'response' // for Express responses
-        ]
+        ],
+        props: true
       }
     ],
     'no-proto': 'error',
@@ -65,52 +65,52 @@ module.exports = {
     'no-restricted-properties': [
       'error',
       {
+        message: 'arguments.callee is deprecated',
         object: 'arguments',
-        property: 'callee',
-        message: 'arguments.callee is deprecated'
+        property: 'callee'
       },
       {
+        message: 'Please use Number.isFinite instead',
         object: 'global',
-        property: 'isFinite',
-        message: 'Please use Number.isFinite instead'
+        property: 'isFinite'
       },
       {
+        message: 'Please use Number.isFinite instead',
         object: 'self',
-        property: 'isFinite',
-        message: 'Please use Number.isFinite instead'
+        property: 'isFinite'
       },
       {
+        message: 'Please use Number.isFinite instead',
         object: 'window',
-        property: 'isFinite',
-        message: 'Please use Number.isFinite instead'
+        property: 'isFinite'
       },
       {
+        message: 'Please use Number.isNaN instead',
         object: 'global',
-        property: 'isNaN',
-        message: 'Please use Number.isNaN instead'
+        property: 'isNaN'
       },
       {
+        message: 'Please use Number.isNaN instead',
         object: 'self',
-        property: 'isNaN',
-        message: 'Please use Number.isNaN instead'
+        property: 'isNaN'
       },
       {
+        message: 'Please use Number.isNaN instead',
         object: 'window',
-        property: 'isNaN',
-        message: 'Please use Number.isNaN instead'
+        property: 'isNaN'
       },
       {
-        property: '__defineGetter__',
-        message: 'Please use Object.defineProperty instead.'
+        message: 'Please use Object.defineProperty instead.',
+        property: '__defineGetter__'
       },
       {
-        property: '__defineSetter__',
-        message: 'Please use Object.defineProperty instead.'
+        message: 'Please use Object.defineProperty instead.',
+        property: '__defineSetter__'
       },
       {
+        message: 'Use the exponentiation operator (**) instead.',
         object: 'Math',
-        property: 'pow',
-        message: 'Use the exponentiation operator (**) instead.'
+        property: 'pow'
       }
     ],
     'no-return-assign': ['error', 'always'],
@@ -130,8 +130,8 @@ module.exports = {
       'error',
       {
         allowShortCircuit: true,
-        allowTernary: true,
-        allowTaggedTemplates: false
+        allowTaggedTemplates: false,
+        allowTernary: true
       }
     ],
     'no-unused-labels': 'error',

@@ -11,12 +11,12 @@ module.exports = {
   ],
   overrides: [
     {
-      files: '**/*.{ts,tsx}',
-      extends: ['./rules/typescript']
+      extends: ['./rules/typescript'],
+      files: '**/*.{ts,tsx}'
     },
     {
-      files: '**/*.{tsx,jsx}',
-      extends: ['./rules/react']
+      extends: ['./rules/react'],
+      files: '**/*.{tsx,jsx}'
     }
   ]
 };

@@ -3,12 +3,12 @@ module.exports = {
     es6: true
   },
   parserOptions: {
-    ecmaVersion: 6,
-    sourceType: 'module',
     ecmaFeatures: {
       generators: false,
       objectLiteralDuplicateProperties: false
-    }
+    },
+    ecmaVersion: 6,
+    sourceType: 'module'
   },
   rules: {
     'arrow-body-style': [
@@ -17,9 +17,9 @@ module.exports = {
       { requireReturnForObjectLiteral: false }
     ],
     'arrow-parens': ['error', 'as-needed'],
-    'arrow-spacing': ['error', { before: true, after: true }],
+    'arrow-spacing': ['error', { after: true, before: true }],
     'constructor-super': 'error',
-    'generator-star-spacing': ['error', { before: false, after: true }],
+    'generator-star-spacing': ['error', { after: true, before: false }],
     'no-class-assign': 'error',
     'no-confusing-arrow': ['error', { allowParens: true }],
     'no-const-assign': 'error',
@@ -39,13 +39,13 @@ module.exports = {
     'prefer-destructuring': [
       'error',
       {
-        VariableDeclarator: {
-          array: false,
-          object: true
-        },
         AssignmentExpression: {
           array: true,
           object: false
+        },
+        VariableDeclarator: {
+          array: false,
+          object: true
         }
       },
       {

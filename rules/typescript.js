@@ -1,10 +1,10 @@
 module.exports = {
+  extends: ['prettier/@typescript-eslint'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     project: './tsconfig.json',
     tsconfigRootDir: process.env.INIT_CWD
   },
-  extends: ['prettier/@typescript-eslint'],
   plugins: ['@typescript-eslint'],
   rules: {
     '@typescript-eslint/adjacent-overload-signatures': 'error',
@@ -17,16 +17,16 @@ module.exports = {
         types: {
           Array: null,
           Boolean: {
-            message: 'Use boolean instead',
-            fixWith: 'boolean'
+            fixWith: 'boolean',
+            message: 'Use boolean instead'
           },
           Object: {
-            message: 'Use {} instead',
-            fixWith: '{}'
+            fixWith: '{}',
+            message: 'Use {} instead'
           },
           String: {
-            message: 'Use string instead',
-            fixWith: 'string'
+            fixWith: 'string',
+            message: 'Use string instead'
           }
         }
       }
@@ -50,16 +50,14 @@ module.exports = {
     '@typescript-eslint/naming-convention': [
       'error',
       {
-        selector: 'variableLike',
-        format: ['camelCase', 'StrictPascalCase', 'UPPER_CASE']
+        format: ['camelCase', 'StrictPascalCase', 'UPPER_CASE'],
+        selector: 'variableLike'
       }
     ],
     '@typescript-eslint/no-array-constructor': 'error',
     '@typescript-eslint/no-base-to-string': 'off',
-    'no-dupe-class-members': 'off',
     '@typescript-eslint/no-dupe-class-members': 'error',
     '@typescript-eslint/no-dynamic-delete': 'off',
-    'no-empty-function': 'off',
     '@typescript-eslint/no-empty-function': [
       'error',
       { allow: ['arrowFunctions'] }
@@ -92,27 +90,23 @@ module.exports = {
     '@typescript-eslint/no-unsafe-call': 'off',
     '@typescript-eslint/no-unsafe-member-access': 'off',
     '@typescript-eslint/no-unsafe-return': 'error',
-    'no-unused-expressions': 'off',
     '@typescript-eslint/no-unused-expressions': [
       'error',
       {
         allowShortCircuit: true,
-        allowTernary: true,
-        allowTaggedTemplates: false
+        allowTaggedTemplates: false,
+        allowTernary: true
       }
     ],
-    'no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars': [
       'error',
-      { vars: 'all', args: 'after-used', ignoreRestSiblings: true }
+      { args: 'after-used', ignoreRestSiblings: true, vars: 'all' }
     ],
     '@typescript-eslint/no-unused-vars-experimental': 'off',
-    'no-use-before-define': 'off',
     '@typescript-eslint/no-use-before-define': [
       'error',
-      { functions: false, classes: true, variables: true }
+      { classes: true, functions: false, variables: true }
     ],
-    'no-useless-constructor': 'off',
     '@typescript-eslint/no-useless-constructor': 'error',
     '@typescript-eslint/no-var-requires': 'error',
     '@typescript-eslint/prefer-as-const': 'off',
@@ -129,12 +123,11 @@ module.exports = {
     '@typescript-eslint/promise-function-async': 'off',
     '@typescript-eslint/quotes': 'off',
     '@typescript-eslint/require-array-sort-compare': 'error',
-    'require-await': 'off',
     '@typescript-eslint/require-await': 'error',
     '@typescript-eslint/restrict-plus-operands': 'error',
     '@typescript-eslint/restrict-template-expressions': [
       'error',
-      { allowNumber: true, allowBoolean: true }
+      { allowBoolean: true, allowNumber: true }
     ],
     '@typescript-eslint/return-await': 'off',
     '@typescript-eslint/semi': 'off',
@@ -145,6 +138,13 @@ module.exports = {
     '@typescript-eslint/type-annotation-spacing': 'off',
     '@typescript-eslint/typedef': 'off',
     '@typescript-eslint/unbound-method': 'error',
-    '@typescript-eslint/unified-signatures': 'off'
+    '@typescript-eslint/unified-signatures': 'off',
+    'no-dupe-class-members': 'off',
+    'no-empty-function': 'off',
+    'no-unused-expressions': 'off',
+    'no-unused-vars': 'off',
+    'no-use-before-define': 'off',
+    'no-useless-constructor': 'off',
+    'require-await': 'off'
   }
 };

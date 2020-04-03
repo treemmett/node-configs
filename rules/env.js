@@ -1,11 +1,11 @@
 module.exports = {
   overrides: [
     {
-      files: 'webpack.config.{ts,js}',
       env: {
-        node: true,
-        browser: false
-      }
+        browser: false,
+        node: true
+      },
+      files: 'webpack.config.{ts,js}'
     }
   ]
 };

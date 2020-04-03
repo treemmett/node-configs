@@ -1,19 +1,14 @@
 module.exports = {
-  plugins: ['jsx-a11y', 'react', 'react-hooks'],
+  env: {
+    browser: true
+  },
   extends: 'prettier/react',
   parserOptions: {
     ecmaFeatures: {
       jsx: true
     }
   },
-  settings: {
-    react: {
-      version: 'detect'
-    }
-  },
-  env: {
-    browser: true
-  },
+  plugins: ['jsx-a11y', 'react', 'react-hooks'],
   rules: {
     'class-methods-use-this': [
       'error',
@@ -42,20 +37,20 @@ module.exports = {
     'jsx-a11y/alt-text': [
       'error',
       {
+        area: [],
         elements: ['img', 'object', 'area', 'input[type="image"]'],
         img: [],
-        object: [],
-        area: [],
-        'input[type="image"]': []
+        'input[type="image"]': [],
+        object: []
       }
     ],
     'jsx-a11y/anchor-has-content': 'error',
     'jsx-a11y/anchor-is-valid': [
       'error',
       {
+        aspects: ['noHref', 'invalidHref', 'preferButton'],
         components: ['Link'],
-        specialLink: ['to'],
-        aspects: ['noHref', 'invalidHref', 'preferButton']
+        specialLink: ['to']
       }
     ],
     'jsx-a11y/aria-activedescendant-has-tabindex': 'error',
@@ -70,8 +65,8 @@ module.exports = {
     'jsx-a11y/control-has-associated-label': [
       'error',
       {
-        labelAttributes: ['label'],
         controlComponents: [],
+        depth: 5,
         ignoreElements: [
           'audio',
           'canvas',
@@ -93,7 +88,8 @@ module.exports = {
           'tree',
           'treegrid'
         ],
-        depth: 5
+
+        labelAttributes: ['label']
       }
     ],
     'jsx-a11y/heading-has-content': 'error',
@@ -130,15 +126,7 @@ module.exports = {
     'jsx-a11y/no-noninteractive-element-to-interactive-role': [
       'error',
       {
-        ul: [
-          'listbox',
-          'menu',
-          'menubar',
-          'radiogroup',
-          'tablist',
-          'tree',
-          'treegrid'
-        ],
+        li: ['menuitem', 'option', 'row', 'tab', 'treeitem'],
         ol: [
           'listbox',
           'menu',
@@ -148,16 +136,25 @@ module.exports = {
           'tree',
           'treegrid'
         ],
-        li: ['menuitem', 'option', 'row', 'tab', 'treeitem'],
+
         table: ['grid'],
-        td: ['gridcell']
+        td: ['gridcell'],
+        ul: [
+          'listbox',
+          'menu',
+          'menubar',
+          'radiogroup',
+          'tablist',
+          'tree',
+          'treegrid'
+        ]
       }
     ],
     'jsx-a11y/no-noninteractive-tabindex': [
       'error',
       {
-        tags: [],
-        roles: ['tabpanel']
+        roles: ['tabpanel'],
+        tags: []
       }
     ],
     'jsx-a11y/no-onchange': 'off',
@@ -212,11 +209,11 @@ module.exports = {
     'react/jsx-no-bind': [
       'error',
       {
-        ignoreRefs: true,
         allowArrowFunctions: true,
-        allowFunctions: false,
         allowBind: false,
-        ignoreDOMComponents: true
+        allowFunctions: false,
+        ignoreDOMComponents: true,
+        ignoreRefs: true
       }
     ],
     'react/jsx-no-comment-textnodes': 'error',
@@ -240,21 +237,21 @@ module.exports = {
     'react/jsx-sort-props': [
       'error',
       {
-        ignoreCase: false,
         callbacksLast: false,
-        shorthandFirst: false,
-        shorthandLast: true,
+        ignoreCase: false,
         noSortAlphabetically: false,
-        reservedFirst: false
+        reservedFirst: false,
+        shorthandFirst: false,
+        shorthandLast: true
       }
     ],
     'react/jsx-tag-spacing': [
       'error',
       {
-        closingSlash: 'never',
-        beforeSelfClosing: 'always',
         afterOpening: 'never',
-        beforeClosing: 'never'
+        beforeClosing: 'never',
+        beforeSelfClosing: 'always',
+        closingSlash: 'never'
       }
     ],
     'react/jsx-uses-react': ['error'],
@@ -262,13 +259,13 @@ module.exports = {
     'react/jsx-wrap-multilines': [
       'error',
       {
-        declaration: 'parens-new-line',
-        assignment: 'parens-new-line',
-        return: 'parens-new-line',
         arrow: 'parens-new-line',
+        assignment: 'parens-new-line',
         condition: 'parens-new-line',
+        declaration: 'parens-new-line',
         logical: 'parens-new-line',
-        prop: 'parens-new-line'
+        prop: 'parens-new-line',
+        return: 'parens-new-line'
       }
     ],
     'react/no-access-state-in-setstate': 'error',
@@ -310,19 +307,6 @@ module.exports = {
     'react/sort-comp': [
       'error',
       {
-        order: [
-          'static-variables',
-          'static-methods',
-          'instance-variables',
-          'lifecycle',
-          '/^on.+$/',
-          'getters',
-          'setters',
-          '/^(get|set)(?!(InitialState$|DefaultProps$|ChildContext$)).+$/',
-          'instance-methods',
-          'everything-else',
-          'rendering'
-        ],
         groups: {
           lifecycle: [
             'displayName',
@@ -352,14 +336,27 @@ module.exports = {
             'componentWillUnmount'
           ],
           rendering: ['/^render.+$/', 'render']
-        }
+        },
+        order: [
+          'static-variables',
+          'static-methods',
+          'instance-variables',
+          'lifecycle',
+          '/^on.+$/',
+          'getters',
+          'setters',
+          '/^(get|set)(?!(InitialState$|DefaultProps$|ChildContext$)).+$/',
+          'instance-methods',
+          'everything-else',
+          'rendering'
+        ]
       }
     ],
     'react/sort-prop-types': [
       'error',
       {
-        ignoreCase: true,
         callbacksLast: false,
+        ignoreCase: true,
         requiredFirst: false,
         sortShapeProp: true
       }
@@ -370,5 +367,10 @@ module.exports = {
     'react/void-dom-elements-no-children': 'error',
     'react-hooks/exhaustive-deps': 'error',
     'react-hooks/rules-of-hooks': 'error'
+  },
+  settings: {
+    react: {
+      version: 'detect'
+    }
   }
 };

@@ -1,10 +1,10 @@
 module.exports = {
-  plugins: ['jest'],
   env: {
     jest: true,
     'jest/globals': true
   },
   extends: ['plugin:jest/recommended', 'plugin:jest/style'],
+  plugins: ['jest'],
   rules: {
     'jest/consistent-test-it': ['error', { fn: 'it' }],
     'jest/expect-expect': 'error',
@@ -40,11 +40,11 @@ module.exports = {
     'jest/prefer-to-contain': 'error',
     'jest/prefer-to-have-length': 'error',
     'jest/prefer-todo': 'off',
-    'jest/require-top-level-describe': 'off',
     'jest/require-to-throw-message': 'error',
+    'jest/require-top-level-describe': 'off',
     'jest/valid-describe': 'error',
-    'jest/valid-expect-in-promise': 'error',
     'jest/valid-expect': 'error',
+    'jest/valid-expect-in-promise': 'error',
     'jest/valid-title': 'error'
   }
 };

@@ -1,17 +1,7 @@
 module.exports = {
-  plugins: ['prettier'],
   extends: ['prettier'],
+  plugins: ['prettier'],
   rules: {
-    'prettier/prettier': [
-      'error',
-      {
-        tabWidth: 2,
-        useTabs: false,
-        singleQuote: true,
-        trailingComma: 'none',
-        arrowParens: 'avoid'
-      }
-    ],
     camelcase: 'error',
     'capitalized-comments': 'off',
     'consistent-this': ['error', 'that'],
@@ -49,24 +39,24 @@ module.exports = {
     'no-restricted-syntax': [
       'error',
       {
-        selector: 'ForInStatement',
         message:
-          'for..in loops iterate over the entire prototype chain, which is virtually never what you want. Use Object.{keys,values,entries}, and iterate over the resulting array.'
+          'for..in loops iterate over the entire prototype chain, which is virtually never what you want. Use Object.{keys,values,entries}, and iterate over the resulting array.',
+        selector: 'ForInStatement'
       },
       {
-        selector: 'ForOfStatement',
         message:
-          'iterators/generators require regenerator-runtime, which is too heavyweight for this guide to allow them. Separately, loops should be avoided in favor of array iterations.'
+          'iterators/generators require regenerator-runtime, which is too heavyweight for this guide to allow them. Separately, loops should be avoided in favor of array iterations.',
+        selector: 'ForOfStatement'
       },
       {
-        selector: 'LabeledStatement',
         message:
-          'Labels are a form of GOTO; using them makes code confusing and hard to maintain and understand.'
+          'Labels are a form of GOTO; using them makes code confusing and hard to maintain and understand.',
+        selector: 'LabeledStatement'
       },
       {
-        selector: 'WithStatement',
         message:
-          '`with` is disallowed in strict mode because it makes code impossible to predict and optimize.'
+          '`with` is disallowed in strict mode because it makes code impossible to predict and optimize.',
+        selector: 'WithStatement'
       }
     ],
     'no-ternary': 'off',
@@ -82,7 +72,21 @@ module.exports = {
     'padding-line-between-statements': 'off',
     'prefer-exponentiation-operator': 'off',
     'prefer-object-spread': 'error',
-    'sort-keys': 'off',
+    'prettier/prettier': [
+      'error',
+      {
+        arrowParens: 'avoid',
+        singleQuote: true,
+        tabWidth: 2,
+        trailingComma: 'none',
+        useTabs: false
+      }
+    ],
+    'sort-keys': [
+      'error',
+      'asc',
+      { caseSensitive: true, minKeys: 2, natural: true }
+    ],
     'sort-vars': 'off',
     'spaced-comment': ['error', 'always']
   }
