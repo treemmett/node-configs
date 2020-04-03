@@ -1,7 +1,7 @@
 module.exports = {
   env: {
     jest: true,
-    'jest/globals': true
+    'jest/globals': true,
   },
   extends: ['plugin:jest/recommended', 'plugin:jest/style'],
   plugins: ['jest'],
@@ -45,6 +45,6 @@ module.exports = {
     'jest/valid-describe': 'error',
     'jest/valid-expect': 'error',
     'jest/valid-expect-in-promise': 'error',
-    'jest/valid-title': 'error'
-  }
+    'jest/valid-title': 'error',
+  },
 };

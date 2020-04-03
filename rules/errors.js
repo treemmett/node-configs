@@ -38,6 +38,6 @@ module.exports = {
     'no-unsafe-negation': 'error',
     'require-atomic-updates': 'error',
     'use-isnan': 'error',
-    'valid-typeof': ['error', { requireStringLiterals: true }]
-  }
+    'valid-typeof': ['error', { requireStringLiterals: true }],
+  },
 };

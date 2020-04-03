@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ['./index', './rules/node']
+  extends: ['./index', './rules/node'],
 };

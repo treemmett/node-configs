@@ -3,7 +3,7 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   parserOptions: {
     project: './tsconfig.json',
-    tsconfigRootDir: process.env.INIT_CWD
+    tsconfigRootDir: process.env.INIT_CWD,
   },
   plugins: ['@typescript-eslint'],
   rules: {
@@ -18,18 +18,18 @@ module.exports = {
           Array: null,
           Boolean: {
             fixWith: 'boolean',
-            message: 'Use boolean instead'
+            message: 'Use boolean instead',
           },
           Object: {
             fixWith: '{}',
-            message: 'Use {} instead'
+            message: 'Use {} instead',
           },
           String: {
             fixWith: 'string',
-            message: 'Use string instead'
-          }
-        }
-      }
+            message: 'Use string instead',
+          },
+        },
+      },
     ],
     '@typescript-eslint/brace-style': 'off',
     '@typescript-eslint/class-literal-property-style': 'off',
@@ -39,7 +39,7 @@ module.exports = {
     '@typescript-eslint/default-param-last': 'off',
     '@typescript-eslint/explicit-function-return-type': [
       'error',
-      { allowExpressions: true }
+      { allowExpressions: true },
     ],
     '@typescript-eslint/explicit-member-accessibility': 'error',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
@@ -51,8 +51,8 @@ module.exports = {
       'error',
       {
         format: ['camelCase', 'StrictPascalCase', 'UPPER_CASE'],
-        selector: 'variableLike'
-      }
+        selector: 'variableLike',
+      },
     ],
     '@typescript-eslint/no-array-constructor': 'error',
     '@typescript-eslint/no-base-to-string': 'off',
@@ -60,7 +60,7 @@ module.exports = {
     '@typescript-eslint/no-dynamic-delete': 'off',
     '@typescript-eslint/no-empty-function': [
       'error',
-      { allow: ['arrowFunctions'] }
+      { allow: ['arrowFunctions'] },
     ],
     '@typescript-eslint/no-empty-interface': 'error',
     '@typescript-eslint/no-explicit-any': ['error', { fixToUnknown: true }],
@@ -95,17 +95,17 @@ module.exports = {
       {
         allowShortCircuit: true,
         allowTaggedTemplates: false,
-        allowTernary: true
-      }
+        allowTernary: true,
+      },
     ],
     '@typescript-eslint/no-unused-vars': [
       'error',
-      { args: 'after-used', ignoreRestSiblings: true, vars: 'all' }
+      { args: 'after-used', ignoreRestSiblings: true, vars: 'all' },
     ],
     '@typescript-eslint/no-unused-vars-experimental': 'off',
     '@typescript-eslint/no-use-before-define': [
       'error',
-      { classes: true, functions: false, variables: true }
+      { classes: true, functions: false, variables: true },
     ],
     '@typescript-eslint/no-useless-constructor': 'error',
     '@typescript-eslint/no-var-requires': 'error',
@@ -127,7 +127,7 @@ module.exports = {
     '@typescript-eslint/restrict-plus-operands': 'error',
     '@typescript-eslint/restrict-template-expressions': [
       'error',
-      { allowBoolean: true, allowNumber: true }
+      { allowBoolean: true, allowNumber: true },
     ],
     '@typescript-eslint/return-await': 'off',
     '@typescript-eslint/semi': 'off',
@@ -145,6 +145,6 @@ module.exports = {
     'no-unused-vars': 'off',
     'no-use-before-define': 'off',
     'no-useless-constructor': 'off',
-    'require-await': 'off'
-  }
+    'require-await': 'off',
+  },
 };

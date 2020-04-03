@@ -7,16 +7,16 @@ module.exports = {
     './rules/imports',
     './rules/strict',
     './rules/style',
-    './rules/variables'
+    './rules/variables',
   ],
   overrides: [
     {
       extends: ['./rules/typescript'],
-      files: '**/*.{ts,tsx}'
+      files: '**/*.{ts,tsx}',
     },
     {
       extends: ['./rules/react'],
-      files: '**/*.{tsx,jsx}'
-    }
-  ]
+      files: '**/*.{tsx,jsx}',
+    },
+  ],
 };

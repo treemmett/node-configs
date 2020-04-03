@@ -1,10 +1,10 @@
 module.exports = {
   env: {
-    es6: true
+    es6: true,
   },
   parserOptions: {
     ecmaVersion: 6,
-    sourceType: 'module'
+    sourceType: 'module',
   },
   plugins: ['import'],
   rules: {
@@ -19,8 +19,8 @@ module.exports = {
         js: 'never',
         jsx: 'never',
         ts: 'never',
-        tsx: 'never'
-      }
+        tsx: 'never',
+      },
     ],
     'import/first': 'error',
     'import/group-exports': 'off',
@@ -61,10 +61,10 @@ module.exports = {
           '**/Gruntfile{,.{ts,js}}', // grunt config
           '**/protractor.conf.{ts,js}', // protractor config
           '**/protractor.conf.*.{ts,js}', // protractor config
-          '**/karma.conf.{ts,js}' // karma config
+          '**/karma.conf.{ts,js}', // karma config
         ],
-        optionalDependencies: false
-      }
+        optionalDependencies: false,
+      },
     ],
     'import/no-internal-modules': 'off',
     'import/no-mutable-exports': 'error',
@@ -84,18 +84,18 @@ module.exports = {
     'import/no-webpack-loader-syntax': 'error',
     'import/order': 'off',
     'import/prefer-default-export': 'error',
-    'import/unambiguous': 'off'
+    'import/unambiguous': 'off',
   },
   settings: {
     'import/extensions': ['.ts', '.tsx', '.js', '.jsx'],
     'import/ignore': [
       'node_modules',
-      '\\.(coffee|scss|css|less|hbs|svg|json)$'
+      '\\.(coffee|scss|css|less|hbs|svg|json)$',
     ],
     'import/resolver': {
       node: {
-        extensions: ['.ts', '.tsx', '.js', '.jsx', '.json']
-      }
-    }
-  }
+        extensions: ['.ts', '.tsx', '.js', '.jsx', '.json'],
+      },
+    },
+  },
 };

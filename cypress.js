@@ -1,3 +1,3 @@
 module.exports = {
-  extends: './rules/cypress'
+  extends: './rules/cypress',
 };

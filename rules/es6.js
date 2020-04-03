@@ -1,20 +1,20 @@
 module.exports = {
   env: {
-    es6: true
+    es6: true,
   },
   parserOptions: {
     ecmaFeatures: {
       generators: false,
-      objectLiteralDuplicateProperties: false
+      objectLiteralDuplicateProperties: false,
     },
     ecmaVersion: 6,
-    sourceType: 'module'
+    sourceType: 'module',
   },
   rules: {
     'arrow-body-style': [
       'error',
       'as-needed',
-      { requireReturnForObjectLiteral: false }
+      { requireReturnForObjectLiteral: false },
     ],
     'arrow-parens': ['error', 'as-needed'],
     'arrow-spacing': ['error', { after: true, before: true }],
@@ -41,16 +41,16 @@ module.exports = {
       {
         AssignmentExpression: {
           array: true,
-          object: false
+          object: false,
         },
         VariableDeclarator: {
           array: false,
-          object: true
-        }
+          object: true,
+        },
       },
       {
-        enforceForRenamedProperties: false
-      }
+        enforceForRenamedProperties: false,
+      },
     ],
     'prefer-numeric-literals': 'error',
     'prefer-rest-params': 'error',
@@ -64,11 +64,11 @@ module.exports = {
         ignoreCase: false,
         ignoreDeclarationSort: false,
         ignoreMemberSort: false,
-        memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single']
-      }
+        memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single'],
+      },
     ],
     'symbol-description': 'error',
     'template-curly-spacing': ['error', 'never'],
-    'yield-star-spacing': ['error', 'after']
-  }
+    'yield-star-spacing': ['error', 'after'],
+  },
 };

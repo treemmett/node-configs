@@ -1,17 +1,17 @@
 module.exports = {
   env: {
     'cypress/globals': true,
-    node: true
+    node: true,
   },
 
   overrides: [
     {
       env: {
         browser: true,
-        node: false
+        node: false,
       },
-      files: '**/*.test.{ts,tsx,js,jsx}'
-    }
+      files: '**/*.test.{ts,tsx,js,jsx}',
+    },
   ],
   plugins: ['cypress', 'chai-friendly'],
   rules: {
@@ -21,6 +21,6 @@ module.exports = {
     'cypress/no-force': 'off',
     'cypress/no-unnecessary-waiting': 'error',
     'cypress/require-data-selectors': 'off',
-    'no-unused-expressions': 'off'
-  }
+    'no-unused-expressions': 'off',
+  },
 };

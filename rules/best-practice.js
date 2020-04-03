@@ -55,10 +55,10 @@ module.exports = {
           'req', // for Express requests
           'request', // for Express requests
           'res', // for Express responses
-          'response' // for Express responses
+          'response', // for Express responses
         ],
-        props: true
-      }
+        props: true,
+      },
     ],
     'no-proto': 'error',
     'no-redeclare': 'error',
@@ -67,51 +67,51 @@ module.exports = {
       {
         message: 'arguments.callee is deprecated',
         object: 'arguments',
-        property: 'callee'
+        property: 'callee',
       },
       {
         message: 'Please use Number.isFinite instead',
         object: 'global',
-        property: 'isFinite'
+        property: 'isFinite',
       },
       {
         message: 'Please use Number.isFinite instead',
         object: 'self',
-        property: 'isFinite'
+        property: 'isFinite',
       },
       {
         message: 'Please use Number.isFinite instead',
         object: 'window',
-        property: 'isFinite'
+        property: 'isFinite',
       },
       {
         message: 'Please use Number.isNaN instead',
         object: 'global',
-        property: 'isNaN'
+        property: 'isNaN',
       },
       {
         message: 'Please use Number.isNaN instead',
         object: 'self',
-        property: 'isNaN'
+        property: 'isNaN',
       },
       {
         message: 'Please use Number.isNaN instead',
         object: 'window',
-        property: 'isNaN'
+        property: 'isNaN',
       },
       {
         message: 'Please use Object.defineProperty instead.',
-        property: '__defineGetter__'
+        property: '__defineGetter__',
       },
       {
         message: 'Please use Object.defineProperty instead.',
-        property: '__defineSetter__'
+        property: '__defineSetter__',
       },
       {
         message: 'Use the exponentiation operator (**) instead.',
         object: 'Math',
-        property: 'pow'
-      }
+        property: 'pow',
+      },
     ],
     'no-return-assign': ['error', 'always'],
     'no-return-await': 'error',
@@ -119,8 +119,8 @@ module.exports = {
     'no-self-assign': [
       'error',
       {
-        props: true
-      }
+        props: true,
+      },
     ],
     'no-self-compare': 'error',
     'no-sequences': 'error',
@@ -131,8 +131,8 @@ module.exports = {
       {
         allowShortCircuit: true,
         allowTaggedTemplates: false,
-        allowTernary: true
-      }
+        allowTernary: true,
+      },
     ],
     'no-unused-labels': 'error',
     'no-useless-call': 'error',
@@ -151,6 +151,6 @@ module.exports = {
     'require-unicode-regexp': 'off',
     'vars-on-top': 'off',
     'wrap-iife': ['error', 'outside', { functionPrototypeMethods: false }],
-    yoda: 'error'
-  }
+    yoda: 'error',
+  },
 };

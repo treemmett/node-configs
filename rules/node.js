@@ -1,6 +1,6 @@
 module.exports = {
   env: {
-    node: true
+    node: true,
   },
   rules: {
     'callback-return': 'error',
@@ -13,6 +13,6 @@ module.exports = {
     'no-process-env': 'error',
     'no-process-exit': 'error',
     'no-restricted-modules': 'off',
-    'no-sync': ['error', { allowAtRootLevel: true }]
-  }
+    'no-sync': ['error', { allowAtRootLevel: true }],
+  },
 };

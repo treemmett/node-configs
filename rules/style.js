@@ -15,7 +15,7 @@ module.exports = {
     'lines-between-class-members': [
       'error',
       'always',
-      { exceptAfterSingleLine: true }
+      { exceptAfterSingleLine: true },
     ],
     'max-lines': 'off',
     'max-lines-per-function': 'off',
@@ -41,30 +41,30 @@ module.exports = {
       {
         message:
           'for..in loops iterate over the entire prototype chain, which is virtually never what you want. Use Object.{keys,values,entries}, and iterate over the resulting array.',
-        selector: 'ForInStatement'
+        selector: 'ForInStatement',
       },
       {
         message:
           'iterators/generators require regenerator-runtime, which is too heavyweight for this guide to allow them. Separately, loops should be avoided in favor of array iterations.',
-        selector: 'ForOfStatement'
+        selector: 'ForOfStatement',
       },
       {
         message:
           'Labels are a form of GOTO; using them makes code confusing and hard to maintain and understand.',
-        selector: 'LabeledStatement'
+        selector: 'LabeledStatement',
       },
       {
         message:
           '`with` is disallowed in strict mode because it makes code impossible to predict and optimize.',
-        selector: 'WithStatement'
-      }
+        selector: 'WithStatement',
+      },
     ],
     'no-ternary': 'off',
     'no-underscore-dangle': [
       'error',
       {
-        enforceInMethodNames: true
-      }
+        enforceInMethodNames: true,
+      },
     ],
     'no-unneeded-ternary': ['error', { defaultAssignment: false }],
     'one-var': ['error', 'never'],
@@ -78,16 +78,15 @@ module.exports = {
         arrowParens: 'avoid',
         singleQuote: true,
         tabWidth: 2,
-        trailingComma: 'none',
-        useTabs: false
-      }
+        useTabs: false,
+      },
     ],
     'sort-keys': [
       'error',
       'asc',
-      { caseSensitive: true, minKeys: 2, natural: true }
+      { caseSensitive: true, minKeys: 2, natural: true },
     ],
     'sort-vars': 'off',
-    'spaced-comment': ['error', 'always']
-  }
+    'spaced-comment': ['error', 'always'],
+  },
 };

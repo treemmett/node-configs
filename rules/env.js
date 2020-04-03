@@ -3,9 +3,9 @@ module.exports = {
     {
       env: {
         browser: false,
-        node: true
+        node: true,
       },
-      files: 'webpack.config.{ts,js}'
-    }
-  ]
+      files: 'webpack.config.{ts,js}',
+    },
+  ],
 };
