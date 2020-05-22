@@ -1,3 +1,12 @@
+# [0.4.0](https://github.com/treemmett/eslint-config/compare/v0.3.1...v0.4.0) (2020-05-22)
+
+
+### Features
+
+* support eslint v7 ([a8e7e7c](https://github.com/treemmett/eslint-config/commit/a8e7e7c19f7eb6164f73af95c045fdcd04f8774f))
+
+
+
 ## [0.3.1](https://gitlab.com/zyehex/eslint-config-zyehex/compare/v0.3.0...v0.3.1) (2020-04-03)
 
 ### Bug Fixes
