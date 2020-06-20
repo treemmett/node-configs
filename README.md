@@ -1,21 +1,27 @@
-# eslint-config-zyehex
+# eslint-config-treemmett
 
 ## Installation
 
 ```bash
 # with yarn
-yarn add -D eslint eslint-config-zyehex
+yarn add -D eslint eslint-config-treemmett
 
 # or if you prefer npm
-npm i -D eslint eslint-config-zyehex
+npm i -D eslint eslint-config-treemmett
 ```
 
 ## Usage
 
-Once the `eslint-config-zyehex` package is installed, you can use it by [extending](http://eslint.org/docs/user-guide/configuring#extending-configuration-files) it in your [ESLint configuration file](http://eslint.org/docs/user-guide/configuring).
+Extend your eslint config
 
 ```json
 {
-  "extends": "zyehex"
+  "extends": [
+    "treemmett",
+    "treemmett/cypress",
+    "treemmett/jest",
+    "treemmett/node",
+    "treemmett/react"
+  ]
 }
 ```
