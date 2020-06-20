@@ -137,7 +137,7 @@ module.exports = {
     '@typescript-eslint/triple-slash-reference': 'off',
     '@typescript-eslint/type-annotation-spacing': 'off',
     '@typescript-eslint/typedef': 'off',
-    '@typescript-eslint/unbound-method': 'error',
+    '@typescript-eslint/unbound-method': 'off',
     '@typescript-eslint/unified-signatures': 'off',
     'no-dupe-class-members': 'off',
     'no-empty-function': 'off',
