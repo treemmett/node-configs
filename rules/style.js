@@ -75,10 +75,21 @@ module.exports = {
     'prettier/prettier': [
       'error',
       {
-        arrowParens: 'avoid',
+        arrowParens: 'always',
+        bracketSpacing: true,
+        endOfLine: 'lf',
+        htmlWhitespaceSensitivity: 'css',
+        jsxBracketSameLine: false,
+        jsxSingleQuote: false,
+        printWidth: 80,
+        proseWrap: 'preserve',
+        quoteProps: 'as-needed',
+        semi: true,
         singleQuote: true,
         tabWidth: 2,
+        trailingComma: 'es5',
         useTabs: false,
+        vueIndentScriptAndStyle: false,
       },
     ],
     'sort-keys': [
