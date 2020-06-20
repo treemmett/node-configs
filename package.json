@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-treemmett",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "some eslint rules i am tired of copying",
   "main": "index.js",
   "files": [
