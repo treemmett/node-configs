@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['next/core-web-vitals', 'next'],
+  extends: ['next/core-web-vitals', 'next', '../index'],
   overrides: [
     {
       files: ['next*.js'],
