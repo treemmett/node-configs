@@ -12,16 +12,10 @@ npm i -D eslint eslint-config-treemmett
 
 ## Usage
 
-Extend your eslint config
+Extend your eslint config, depending on the configuration of your project
 
 ```json
 {
-  "extends": [
-    "treemmett",
-    "treemmett/cypress",
-    "treemmett/jest",
-    "treemmett/node",
-    "treemmett/react"
-  ]
+  "extends": ["treemmett", "treemmett/next"]
 }
 ```
