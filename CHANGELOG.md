@@ -1,3 +1,13 @@
+#### 0.5.0 (2022-10-14)
+
+##### Chores
+
+- upgrade hooks (38f40cdc)
+
+##### New Features
+
+- upgrade rules (f1dc2ad4)
+
 ## [0.4.1](https://github.com/treemmett/eslint-config/compare/v0.4.0...v0.4.1) (2020-06-20)
 
 ### Bug Fixes
