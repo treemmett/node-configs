@@ -1,3 +1,13 @@
+#### 0.5.1 (2022-10-14)
+
+##### Documentation Changes
+
+- update readme (227c86a0)
+
+##### Bug Fixes
+
+- **next:** extend base (d579edf8)
+
 #### 0.5.0 (2022-10-14)
 
 ##### Chores
