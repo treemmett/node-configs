@@ -4,11 +4,7 @@
   "description": "some eslint rules i am tired of copying",
   "main": "index.js",
   "files": [
-    "rules/",
-    "cypress.js",
-    "jest.js",
-    "node.js",
-    "react.js"
+    "next.js"
   ],
   "author": "Tregan <tregan@tregan.me>",
   "repository": "github:treemmett/eslint-config",
@@ -18,19 +14,16 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^3.3.0",
-    "@typescript-eslint/parser": "^3.3.0",
-    "confusing-browser-globals": "^1.0.9",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-chai-friendly": "^0.6.0",
-    "eslint-plugin-cypress": "^2.11.1",
-    "eslint-plugin-import": "^2.21.2",
-    "eslint-plugin-jest": "^23.13.2",
-    "eslint-plugin-jsx-a11y": "^6.3.1",
-    "eslint-plugin-prettier": "^3.1.4",
-    "eslint-plugin-react": "^7.20.0",
-    "eslint-plugin-react-hooks": "^4.0.4",
-    "prettier": "^2.0.5"
+    "@typescript-eslint/eslint-plugin": "^5.40.0",
+    "@typescript-eslint/parser": "^5.40.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-next": "^12.3.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.31.10",
+    "eslint-plugin-react-hooks": "^4.6.0"
   },
   "peerDependencies": {
     "eslint": "^8.25.0",
