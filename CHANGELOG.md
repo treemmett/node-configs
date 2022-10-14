@@ -1,3 +1,9 @@
+#### 0.5.2 (2022-10-14)
+
+##### Bug Fixes
+
+- **next:** base import (4a663d36)
+
 #### 0.5.1 (2022-10-14)
 
 ##### Documentation Changes
