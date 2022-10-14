@@ -14,7 +14,8 @@
   "repository": "github:treemmett/eslint-config",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint ."
+    "lint": "lint-staged",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^3.3.0",
@@ -32,8 +33,9 @@
     "prettier": "^2.0.5"
   },
   "peerDependencies": {
-    "eslint": ">= 7.0.0",
-    "typescript": ">= 3.9.0"
+    "eslint": "^8.25.0",
+    "prettier": "^2.7.1",
+    "typescript": "^4.8.4"
   },
   "peerDependenciesMeta": {
     "typescript": {
@@ -41,13 +43,13 @@
     }
   },
   "devDependencies": {
-    "eslint": "^7.3.0",
-    "husky": "^4.2.5",
-    "typescript": "^3.9.5"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn lint"
-    }
+    "@commitlint/config-conventional": "^17.1.0",
+    "commitlint": "^17.1.2",
+    "cspell": "^6.12.0",
+    "eslint": "^8.25.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "typescript": "^4.8.4"
   }
 }
