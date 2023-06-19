@@ -7,7 +7,7 @@
     "next.js"
   ],
   "author": "Tregan <tregan@tregan.me>",
-  "repository": "github:treemmett/eslint-config",
+  "repository": "github.com:treemmett/node-configs",
   "license": "MIT",
   "scripts": {
     "lint": "lint-staged",
