@@ -1,13 +1,13 @@
-# eslint-config-treemmett
+# Node configs
 
 ## Installation
 
 ```bash
 # with yarn
-yarn add -D eslint eslint-config-treemmett
+yarn add -D eslint tregan
 
 # or if you prefer npm
-npm i -D eslint eslint-config-treemmett
+npm i -D eslint tregan
 ```
 
 ## Usage
@@ -16,6 +16,6 @@ Extend your eslint config, depending on the configuration of your project
 
 ```json
 {
-  "extends": ["treemmett", "treemmett/next"]
+  "extends": ["tregan/eslint", "tregan/eslint/next"]
 }
 ```

@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-treemmett",
+  "name": "tregan",
   "version": "0.5.2",
   "description": "some eslint rules I'm tired of copying",
   "main": "index.js",
